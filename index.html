@@ -7,17 +7,411 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="layout">
+    <main>
       <aside>
         <div class="logo">NEONSTREAM</div>
         <nav>
-          <a href="#" class="active">Home</a>
-          <a href="#">Search</a>
-          <a href="#">Library</a>
-          <a href="#">Playlists</a>
+          <a href="#" class="active"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-house-icon lucide-house"
+            >
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+            </svg>
+            Home</a
+          >
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search-icon lucide-search"
+            >
+              <path d="m21 21-4.34-4.34" />
+              <circle cx="11" cy="11" r="8" />
+            </svg>
+            Search</a
+          >
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-square-library-icon lucide-square-library"
+            >
+              <rect width="18" height="18" x="3" y="3" rx="2" />
+              <path d="M7 7v10" />
+              <path d="M11 7v10" />
+              <path d="m15 7 2 10" />
+            </svg>
+            Library</a
+          >
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-list-music-icon lucide-list-music"
+            >
+              <path d="M16 5H3" />
+              <path d="M11 12H3" />
+              <path d="M11 19H3" />
+              <path d="M21 16V5" />
+              <circle cx="18" cy="16" r="3" />
+            </svg>
+            Playlists</a
+          >
         </nav>
         <button class="playlist-btn">CREATE PLAYLIST</button>
       </aside>
-    </div>
+      <section>
+        <header>
+          <div class="search-bar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search-icon lucide-search"
+            >
+              <path d="m21 21-4.34-4.34" />
+              <circle cx="11" cy="11" r="8" />
+            </svg>
+            <input type="text" placeholder="Search artists, albums or tracks" />
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bell-icon lucide-bell"
+            >
+              <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+              <path
+                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-settings-icon lucide-settings"
+            >
+              <path
+                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+              />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+        </header>
+        <div class="page">
+          <section class="hero">
+            <div>
+              <h6>FEATURED RELEASE</h6>
+              <h1>Neon Nights Synthesis</h1>
+              <p>
+                Immerse yourself in the raw, brutalist beats of the underground
+                cyber scene. Curated for maximum focus and high-energy coding
+                sessions.
+              </p>
+              <div class="buttons">
+                <button class="primary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-play-icon lucide-play"
+                  >
+                    <path
+                      d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+                    />
+                  </svg>
+                  LISTEN NOW
+                </button>
+                <button>SAVE TO LIBRARY</button>
+              </div>
+            </div>
+          </section>
+          <section class="recently-played">
+            <div class="header">
+              <h2>Recently Played</h2>
+              <h6>VIEW ALL</h6>
+            </div>
+            <div class="cards">
+              <div>
+                <img src="./images/music-01.png" alt="Music 1 Cover" />
+                <div class="title">Void Resonance</div>
+                <div class="artist">Architects of Sound</div>
+              </div>
+              <div>
+                <img src="./images/music-02.png" alt="Music 2 Cover" />
+                <div class="title">Concrete Jungle</div>
+                <div class="artist">Urban Dissonance</div>
+              </div>
+              <div>
+                <img src="./images/music-03.png" alt="Music 3 Cover" />
+                <div class="title">Analog Dreams</div>
+                <div class="artist">Synthwave Collective</div>
+              </div>
+              <div>
+                <img src="./images/music-04.png" alt="Music 4 Cover" />
+                <div class="title">Glitch Protocols</div>
+                <div class="artist">System.Error</div>
+              </div>
+              <div>
+                <img src="./images/music-05.png" alt="Music 5 Cover" />
+                <div class="title">Studio Sessions</div>
+                <div class="artist">The Producers</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <footer>
+        <div class="music-info">
+          <img src="./images/nowplaying.png" alt="Album Cover" />
+          <div>
+            <div class="title">System Override</div>
+            <div class="artist">The Grid</div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-heart-icon lucide-heart"
+          >
+            <path
+              d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+            />
+          </svg>
+        </div>
+        <div class="control-btns">
+          <div class="buttons">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shuffle-icon lucide-shuffle"
+              >
+                <path d="m18 14 4 4-4 4" />
+                <path d="m18 2 4 4-4 4" />
+                <path
+                  d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"
+                />
+                <path d="M2 6h1.972a4 4 0 0 1 3.6 2.2" />
+                <path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45" />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-skip-back-icon lucide-skip-back"
+              >
+                <path
+                  d="M17.971 4.285A2 2 0 0 1 21 6v12a2 2 0 0 1-3.029 1.715l-9.997-5.998a2 2 0 0 1-.003-3.432z"
+                />
+                <path d="M3 20V4" />
+              </svg>
+            </button>
+            <button class="play-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-play-icon lucide-play"
+              >
+                <path
+                  d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-skip-forward-icon lucide-skip-forward"
+              >
+                <path d="M21 4v16" />
+                <path
+                  d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-repeat-icon lucide-repeat"
+              >
+                <path d="m17 2 4 4-4 4" />
+                <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
+                <path d="m7 22-4-4 4-4" />
+                <path d="M21 13v1a4 4 0 0 1-4 4H3" />
+              </svg>
+            </button>
+          </div>
+          <div class="duration">
+            00:00
+            <input
+              class="progress-bar"
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+            />
+            03:41
+          </div>
+        </div>
+        <div class="volume">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-list-music-icon lucide-list-music"
+          >
+            <path d="M16 5H3" />
+            <path d="M11 12H3" />
+            <path d="M11 19H3" />
+            <path d="M21 16V5" />
+            <circle cx="18" cy="16" r="3" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-monitor-smartphone-icon lucide-monitor-smartphone"
+          >
+            <path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8" />
+            <path d="M10 19v-3.96 3.15" />
+            <path d="M7 19h5" />
+            <rect width="6" height="10" x="16" y="12" rx="2" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-volume2-icon lucide-volume-2"
+          >
+            <path
+              d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"
+            />
+            <path d="M16 9a5 5 0 0 1 0 6" />
+            <path d="M19.364 18.364a9 9 0 0 0 0-12.728" />
+          </svg>
+          <input class="volume-bar" type="range" min="0" max="100" value="0" />
+        </div>
+      </footer>
+    </main>
   </body>
 </html>

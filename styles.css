@@ -8,16 +8,197 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.layout {
+main {
   background-color: #121414;
+  height: 100vh;
+  display: flex;
 }
 
 aside {
   background-color: #1e2020;
   width: 280px;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   position: relative;
+  border-right: 2px solid #262626;
+}
+
+section {
+  flex: 1;
+  overflow-y: auto;
+}
+
+section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #262626;
+}
+
+section > header > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+section > header > div > svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.search-bar {
+  border: 2px solid #262626;
+  padding: 5px 10px;
+  width: 300px;
+  gap: 10px;
+}
+
+section > header > div > input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  outline: none;
+}
+
+.page {
+  padding: 40px;
+}
+
+.hero {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  border: 2px solid #262626;
+  padding: 40px;
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.hero > div {
+  padding-top: 40px;
+  width: 720px;
+  color: #bbb9b8;
+}
+
+.hero > div > h6 {
+  background-color: #262626;
+  width: fit-content;
+  padding: 4px;
+  color: #c3f400;
+  margin: 0;
+}
+
+.hero > div > h1 {
+  width: fit-content;
+  padding: 4px;
+  color: white;
+  margin: 4px 0;
+  padding-left: 0;
+}
+
+.hero > div > .buttons {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.hero > div > .buttons > .primary {
+  background-color: #c3f400;
+  color: #010100;
+  border: none;
+}
+
+.hero > div > .buttons > .primary > svg {
+  color: #010100;
+}
+
+.hero > div > .buttons > button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 44px;
+}
+
+.recently-played {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.recently-played > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #262626;
+}
+
+.recently-played > .header > h6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c3f400;
+  margin: 0;
+}
+
+.recently-played > .header > h2 {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.cards > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cards > div > img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.cards > div > .title {
+  color: white;
+  font-size: small;
+}
+
+.cards > div > .artist {
+  color: #bbb9b8;
+  font-size: smaller;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  border-top: 2px solid #262626;
+  background-color: #1e2020;
 }
 
 .logo {
@@ -43,6 +224,9 @@ nav > a.active {
 nav > a {
   color: #bbb9b8;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .playlist-btn {
@@ -54,7 +238,124 @@ nav > a {
   padding: 10px;
   cursor: pointer;
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
   left: 20px;
   right: 20px;
+}
+
+.duration {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #bbb9b8;
+  font-size: small;
+  gap: 12px;
+}
+
+.control-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.play-btn {
+  background-color: #c3f400 !important;
+}
+
+.play-btn > svg {
+  color: #010100 !important;
+}
+
+.buttons > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.buttons > button > svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.volume > svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.progress-bar {
+  width: 500px;
+  height: 4px;
+  accent-color: #c3f400;
+  background-color: #bbb9b8;
+  border: none;
+  border-radius: 2px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.volume-bar {
+  width: 72px;
+  height: 4px;
+  accent-color: #c3f400;
+  background-color: #bbb9b8;
+  border: none;
+  border-radius: 2px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.music-info > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.music-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.music-info > div > .title {
+  color: white;
+  font-size: small;
+}
+
+.music-info > div > .artist {
+  color: #bbb9b8;
+  font-size: smaller;
+}
+
+.music-info > svg {
+  width: 16px;
+  height: 16px;
+  color: white;
 }
