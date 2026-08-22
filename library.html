@@ -11,7 +11,7 @@
       <aside>
         <div class="logo">NEONSTREAM</div>
         <nav>
-          <a href="index.html" class="active"
+          <a href="index.html"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -49,7 +49,7 @@
             </svg>
             Search</a
           >
-          <a href="library.html"
+          <a href="library.html" class="active"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -151,45 +151,22 @@
           </div>
         </header>
         <div class="page">
-          <section class="hero">
-            <div>
-              <h6>FEATURED RELEASE</h6>
-              <h1>Neon Nights Synthesis</h1>
-              <p>
-                Immerse yourself in the raw, brutalist beats of the underground
-                cyber scene. Curated for maximum focus and high-energy coding
-                sessions.
-              </p>
-              <div class="buttons">
-                <button class="primary">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-play-icon lucide-play"
-                  >
-                    <path
-                      d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
-                    />
-                  </svg>
-                  LISTEN NOW
-                </button>
-                <button>SAVE TO LIBRARY</button>
-              </div>
-            </div>
-          </section>
           <section class="recently-played">
             <div class="header">
-              <h2>Recently Played</h2>
-              <h6>VIEW ALL</h6>
+              <h2>Your Library</h2>
+              <h6>FILTER</h6>
             </div>
-            <div class="cards">
+            <div class="cards" style="flex-wrap: wrap;">
+              <div>
+                <img src="./images/library_cover.png" alt="Liked Songs" />
+                <div class="title">Liked Songs</div>
+                <div class="artist">124 tracks</div>
+              </div>
+              <div>
+                <img src="./images/music_cover.png" alt="Nano Banana Vibes" />
+                <div class="title">Nano Banana Vibes</div>
+                <div class="artist">NEONSTREAM</div>
+              </div>
               <div>
                 <img src="./images/music-01.png" alt="Music 1 Cover" />
                 <div class="title">Void Resonance</div>
@@ -209,11 +186,6 @@
                 <img src="./images/music-04.png" alt="Music 4 Cover" />
                 <div class="title">Glitch Protocols</div>
                 <div class="artist">System.Error</div>
-              </div>
-              <div>
-                <img src="./images/music-05.png" alt="Music 5 Cover" />
-                <div class="title">Studio Sessions</div>
-                <div class="artist">The Producers</div>
               </div>
             </div>
           </section>
